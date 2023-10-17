@@ -50,18 +50,6 @@ $(document).keydown(function (){
 });
 
 function checkAnswer(currentLevel){
-    // if(userClickedPattern[currentLevel]==gamePattern[currentLevel])
-    // {
-    //     console.log("correct");
-    //     setTimeout(nextSequence,1000);
-    // }else{
-    //     console.log("incorrect");
-    //     playSound('wrong');
-    //     $('body').addClass("game-over");
-    //     setTimeout(function (){$('body').removeClass("game-over")},200)
-    //     $('h1').text("Game Over, Press Any Key to Restart");
-    //     startOver();
-    // }
     if (gamePattern[currentLevel] === userClickedPattern[currentLevel]) {
         if (userClickedPattern.length === gamePattern.length){
           setTimeout(function () {
